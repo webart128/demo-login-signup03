@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود/ثبت نام</title>
+    <link rel="stylesheet" href="./assets/css/style_login_signup.css">
+    <link rel="icon" type="image/png" href="assets/images/WebArt1.png">
+</head>
+<body class="account-page">
+
+  <div class="vertical-container">
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="step-container">
+        <div class="step-indicator active">1</div>
+        <div class="step-line active"></div>
+      </div>
+      <div class="step-container">
+        <div class="step-indicator">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-container">
+        <div class="step-indicator">3</div>
+      </div>
+    </div>
+    
+
+    <!-- Step 1: شماره موبایل -->
+    <form class="step step-phone active">
+      <div class="input-group">
+        <input type="tel" id="phone" placeholder=" " maxlength="11" required />
+        <label for="phone">شماره موبایل</label>
+      </div>
+      <button type="submit" class="btn-auth" disabled>ارسال کد تایید</button>
+    </form>
+
+    <!-- Step 2: OTP -->
+    <form class="step step-code">
+      <div class="otp-group">
+        <input maxlength="1" type="text">
+        <input maxlength="1" type="text">
+        <input maxlength="1" type="text">
+        <input maxlength="1" type="text">
+        <input maxlength="1" type="text">
+        <input maxlength="1" type="text">
+      </div>
+      <div class="otp-timer">
+        <span id="timer">02:00</span> | 
+        <button type="button" id="resend" disabled>ارسال دوباره کد</button>
+      </div>
+      <button type="submit" class="btn-auth" disabled>تایید و ورود</button>
+    </form>
+
+    <!-- Step 3: موفقیت -->
+    <div class="step step-success">
+      <h2>ورود موفقیت‌آمیز بود ✅</h2>
+      <p>به پنل خود خوش آمدید!</p>
+    </div>
+
+  </div>
+  <script src="./assets/js/script_login_signup.js"></script>
+</body>
+</html>
